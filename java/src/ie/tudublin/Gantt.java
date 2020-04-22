@@ -40,41 +40,47 @@ public class Gantt extends PApplet
 		text("Research", 50, 100);
 		fill(255);
 		textSize(10);
-		//rect(150, 50, 150, 20);
+		rect(150, 75, 80, 30); //x,y,w,h
 
 		text("Design", 50, 150);
 		fill(255);
 		textSize(10);
+		rect(250, 120, 80, 30); //x,y,w,h
 
 		text("Phase 1", 50, 200);
 		fill(255);
 		textSize(10);
+		rect(350, 165, 40, 30); //x,y,w,h
 
 		text("Phase 2", 50, 250);
 		fill(255);
 		textSize(10);
+		rect(370, 220, 80, 30); //x,y,w,h
 
 		text("Phase 3", 50, 300);
 		fill(255);
 		textSize(10);
+		rect(450, 270, 60, 30); //x,y,w,h
 
 		text("Integration", 50, 350);
 		fill(255);
 		textSize(10);
+		rect(550, 325, 40, 30); //x,y,w,h
 
 		text("Testing", 50, 400);
 		fill(255);
 		textSize(10);
+		rect(550, 380, 80, 30); //x,y,w,h
 
 		text("Evaluation", 50, 450);
 		fill(255);
 		textSize(10);
+		rect(610, 435, 80, 30); //x,y,w,h
 
 		text("Release", 50, 500);
 		fill(255);
 		textSize(10);
-
-		
+		rect(690, 490, 40, 30); //x,y,w,h
 	}
 
 	public void displayBarLines()
@@ -86,29 +92,29 @@ public class Gantt extends PApplet
 		line(190, 50, 190 , 550);
 		line(210, 50, 210 , 550);
 		line(230, 50, 230 , 550);
-		line(250, 50, 250 , 550);
+		line(250, 50, 250 , 550);//num6
 		line(270, 50, 270 , 550);
 		line(290, 50, 290 , 550);
 		line(310, 50, 310 , 550);
 		line(330, 50, 330 , 550);
-		line(350, 50, 350 , 550);
-		line(370, 50, 370 , 550);
+		line(350, 50, 350 , 550);//num11
+		line(370, 50, 370 , 550);//num12
 		line(390, 50, 390 , 550);
 		line(410, 50, 410 , 550);
 		line(430, 50, 430 , 550);
-		line(450, 50, 450 , 550);
+		line(450, 50, 450 , 550);//num16
 		line(470, 50, 470 , 550);
 		line(490, 50, 490 , 550);
 		line(510, 50, 510 , 550);
 		line(530, 50, 530 , 550);
-		line(550, 50, 550 , 550);
+		line(550, 50, 550 , 550);//num21
 		line(570, 50, 570 , 550);
 		line(590, 50, 590 , 550);
-		line(610, 50, 610 , 550);
+		line(610, 50, 610 , 550);//num24
 		line(630, 50, 630 , 550);
 		line(650, 50, 650 , 550);
 		line(670, 50, 670 , 550);
-		line(690, 50, 690 , 550);
+		line(690, 50, 690 , 550);//num28
 		line(710, 50, 710 , 550);
 		line(730, 50, 730 , 550);
 		stroke(255,255,255);
