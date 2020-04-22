@@ -8,9 +8,7 @@ public class Task
     public int Start;
     public int End;
 
-
-
-    public Color(int Start, int End)
+    public Task(int Start, int End)
     {
         this.Start = Start;
         this.End = End;
