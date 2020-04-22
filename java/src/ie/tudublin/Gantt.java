@@ -4,7 +4,9 @@ import processing.core.PApplet;
 
 public class Gantt extends PApplet
 {	
-	
+	//arraylist task
+	public ArrayList<Task> colors = new ArrayList<Task>();
+
 	public void settings()
 	{
 		size(800, 600);
@@ -17,7 +19,12 @@ public class Gantt extends PApplet
 
 	public void printTasks()
 	{
-		
+		Table t = loadTable("tasks.csv", "header");
+		for(TableRow row:t.rows())
+		{
+			Task ta = new Task(row);
+			tasks.add(ta);
+		}
 	}
 	
 	public void mousePressed()
