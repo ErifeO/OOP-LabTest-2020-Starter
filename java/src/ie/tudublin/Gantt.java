@@ -4,6 +4,8 @@ import processing.core.PApplet;
 
 public class Gantt extends PApplet
 {	
+	//declaring an ArrayList to hold instances of the Task class
+	public ArrayList<Task> tasks = new ArrayList<Task>();
 	
 	public void settings()
 	{
@@ -12,7 +14,12 @@ public class Gantt extends PApplet
 
 	public void loadTasks()
 	{
-		
+		Table t = loadTable("tasks.csv", "header");
+		for(TableRow row:t.rows())
+		{
+			Task ta = new Task(row);
+			tasks.add(ta);
+		}
 	}
 
 	public void printTasks()
