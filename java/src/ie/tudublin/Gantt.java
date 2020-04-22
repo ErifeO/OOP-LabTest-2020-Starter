@@ -19,9 +19,9 @@ public class Gantt extends PApplet
 	public void loadTasks()
 	{
 		Table t = loadTable("tasks.csv", "header");
-		for(TableRow row:t.rows())
+		for(TableRow rows:t.rows())
 		{
-			Task ta = new Task(row);
+			Task ta = new Task(rows);
 			tasks.add(ta);
 		}
 	}
