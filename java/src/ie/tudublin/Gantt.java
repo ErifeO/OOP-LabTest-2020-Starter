@@ -14,17 +14,17 @@ public class Gantt extends PApplet
 
 	public void loadTasks()
 	{
-		
-	}
-
-	public void printTasks()
-	{
 		Table t = loadTable("tasks.csv", "header");
 		for(TableRow row:t.rows())
 		{
 			Task ta = new Task(row);
 			tasks.add(ta);
 		}
+	}
+
+	public void printTasks()
+	{
+		
 	}
 	
 	public void mousePressed()
